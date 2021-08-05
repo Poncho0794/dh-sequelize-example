@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BAZAR de digital House</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Cursos en el bazar </h1>
+    <ul>
+      <% products.forEach(product => { %>
+        <li> 
+          <a href="/<%= product.id %> "><%= product.name %></a>  
+        </li>
+
+        <% }) %> 
+    </ul>
+    
+  </body>
+</html>
